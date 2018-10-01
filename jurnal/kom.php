@@ -1,7 +1,7 @@
 <?php 
 $kom = $_POST['kom'];
 
-if (strlen($_POST['kom']) < 5) {
+if (count(explode(" ", $kom)) < 5) {
 	?>			
 	<script>
 	    alert("Komentar terlalu pendek");
